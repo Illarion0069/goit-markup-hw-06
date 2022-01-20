@@ -678,10 +678,7 @@ body {
 .form-field .form-input {
   padding-left: 42px;
 }
-/* .form-field .comment {
-  padding-left: 12px;
-  padding-top: 16px;
-} */
+
 .icon {
   display: inline-block;
   width: 16px;
@@ -689,12 +686,12 @@ body {
   border: 2px solid var(--primary-title-color);
   border-radius: 4px;
 }
-.checkbox:checked + .icon {
+.checkbox:checked + label[for="policy"] .icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url("../img/icons.svg#icon-check");
+  background-image: url(../img/icon\ check.svg);
   background-size: contain;
-  background-origin: border-box;
+  background-repeat: no-repeat;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -733,6 +730,7 @@ body {
 .form-input:hover {
   border-color: var(--accent-color);
 }
+
 .form-field .comment:hover {
   border-color: var(--accent-color);
 }
