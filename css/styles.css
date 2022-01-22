@@ -655,7 +655,6 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
 }
-
 .svg-modal-icon {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -724,17 +723,17 @@ body {
 .form-input {
   position: relative;
 }
-.form-input:hover ~ .svg-modal-icon {
+.form-input:focus ~ .svg-modal-icon {
   fill: #2196f3;
 }
-.form-input:hover {
+.form-input:focus {
   border-color: var(--accent-color);
+  outline: none;
 }
-
-.form-field .comment:hover {
+.form-field .comment:focus {
   border-color: var(--accent-color);
+  outline: none;
 }
-
 .button-field {
   display: flex;
   justify-content: center;
